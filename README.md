@@ -23,6 +23,24 @@
 
 https://drive.google.com/file/d/1Y3FAbTWr0bNPyP8W97wkHDBH8UAevOtx/view?usp=sharing
 # 2. Реализация программы
+~~~#include <stdlib.h>
+#include <stdio.h>
+#include <locale.h>
+void main() {
+	setlocale(LC_ALL, "RUS");
+	int x;
+	int y;
+	int mid;
+	int midx;
+	int midy;
+	x = 14;
+	y = 24;
+	mid = (x + y) / 2;
+	midx = abs(mid - x);
+	midy = abs(mid - y);
+	printf("Средний возраст мальчиков = %d лет \n Возраст Коли отличается от среднего на %d лет, а возраст Миши отличается от среднего на %d лет", mid, midx, midy);
+}
+~~~
 # 3. Результат работы программы
 Средний возраст мальчиков = 19 лет
  Возраст Коли отличается от среднего на 5 лет, а возраст Миши отличается от среднего на 5 лет
